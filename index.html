@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Player</title>
+    <link rel="stylesheet" href="all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Quran Player</h1>
+    <div class="music-container" id="music-container">
+      <div class="music-info">
+        <div class="up">
+          <h4 id="title">An-nas</h4>
+          <div class="curr-time">
+            <span id="currTime"></span> /
+            <span id="durTime"> </span>
+          </div>
+        </div>
+        <div class="progress-container" id="progress-container">
+          <div class="progress" id="progress"></div>
+        </div>
+      </div>
+      <audio src="An-Nas.mp3" id="audio"></audio>
+      <div class="img-container">
+        <img src="dark-background.jpg" alt="" />
+      </div>
+      <div class="navigation">
+        <button id="prev" class="action-btn">
+          <i class="fa-solid fa-backward"></i>
+        </button>
+        <button id="play" class="action-btn action-big-btn">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button id="next" class="action-btn">
+          <i class="fa-solid fa-forward"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
