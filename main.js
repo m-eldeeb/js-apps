@@ -1,4 +1,4 @@
-const musicContainer = document.getElementById("music-container");
+const quranContainer = document.getElementById("quran-container");
 const playBtn = document.getElementById("play");
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
@@ -23,14 +23,14 @@ function loadQuran(quran) {
 }
 
 function play() {
-  musicContainer.classList.add("play");
+  quranContainer.classList.add("play");
   playBtn.querySelector("i.fa-solid").classList.remove("fa-play");
   playBtn.querySelector("i.fa-solid").classList.add("fa-pause");
   audio.play();
 }
 
 function pause() {
-  musicContainer.classList.remove("play");
+  quranContainer.classList.remove("play");
   playBtn.querySelector("i.fa-solid").classList.add("fa-play");
   playBtn.querySelector("i.fa-solid").classList.remove("fa-remove");
   audio.pause();
@@ -95,7 +95,7 @@ function curTime(e) {
 }
 
 playBtn.addEventListener("click", () => {
-  const isPlaying = musicContainer.classList.contains("play");
+  const isPlaying = quranContainer.classList.contains("play");
   if (isPlaying) {
     pause();
   } else {

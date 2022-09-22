@@ -20,7 +20,7 @@ body {
  
 }
 
-.music-container {
+.quran-container {
   background: #fff;
 
   display: flex;
@@ -32,7 +32,7 @@ body {
   z-index: 10;
 }
 
-.music-info {
+.quran-info {
   background-color: rgba(255, 255, 255, 0.5);
   position: absolute;
   top: 0;
@@ -45,22 +45,22 @@ body {
   transition: transform 0.3s ease-in, opacity 0.3s ease-in;
 }
 
-.music-container.play .music-info {
+.quran-container.play .quran-info {
   transform: translateY(-100%);
   opacity: 1;
 }
-.music-info .up {
+.quran-info .up {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.music-info h4 {
+.quran-info h4 {
   margin: 0;
 }
-.music-info .curr-time{
+.quran-info .curr-time{
   font-weight: bold;
 }
-.music-info .progress-container {
+.quran-info .progress-container {
   background-color: #fff;
   height: 4px;
   width: 100%;
@@ -103,7 +103,7 @@ body {
   animation-play-state: paused;
 }
 
-.music-container.play .img-container img {
+.quran-container.play .img-container img {
   animation-play-state: running;
 }
 
